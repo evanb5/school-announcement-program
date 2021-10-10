@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<style>
+div.header {
+	background-color: lightblue;
+	padding: 20px;
+	margin: 0px;
+}
+div.grade {
+	position: fixed;
+	left: 100px;
+}
+div.left {
+	height: 100%;
+	width: 30%;
+	 position: fixed;
+	left: 0;
+}
+div.right {
+	height: 100%;
+	width: 70%;
+	 position: fixed;
+	right: 0;
+}
+</style>
+<head>
+<script src="studentViewer.js"></script>
+<div class="header">
+	<center>
+		<h1>Here are your Announcements!</h1>
+	</center>
+</div>
+</head>
+<body onload="displayAnnouncement()">
+<br>
+<br>
+<div class="left">
+<center>		<!--Table that displays student selection-->
+<table border="solid">
+	<tr>
+		<th id="displayGradeSelection"></th>
+	</tr>
+	<tr>
+		<th id="displayGenderSelection"></th>
+	</tr>
+	<tr>
+		<th id="displayClubSelection"></th>
+	</tr>
+</table>
+</center>
+</div>
+<div>
+<p style="text-align:center;"id="htmlTAnnouncement"></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+	<center>					<!-- Clicking the button will bring you back to the student options page -->
+	<button onclick="location.href='studentOptions.html'">SEARCH AGAIN!</button>
+	</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<style>
+div.header {
+	background-color: lightblue;
+	padding: 20px;
+	margin: 0px;
+}
+div.grade {
+	position: fixed;
+	left: 100px;
+}
+div.left {
+	height: 100%;
+	width: 30%;
+	 position: fixed;
+	left: 0;
+}
+div.right {
+	height: 100%;
+	width: 70%;
+	 position: fixed;
+	right: 0;
+}
+</style>
+<head>
+<script src="studentViewer.js"></script>
+<div class="header">
+	<center>
+		<h1>Here are your Announcements!</h1>
+	</center>
+</div>
+</head>
+<body onload="displayAnnouncement()">
+
+<div >
+<table>
+	<tr>
+		<td>1.</td>
+		<td><p id="htmlTAnnouncement"></p></td>
+	</tr>	
+</table>
+</div>
+
+<div>
+	<center>
+	<button >SEARCH AGAIN</button>
+	</center>
+</div>
+</body>
+</html>

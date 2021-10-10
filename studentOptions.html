@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		/*Sets header background colour to blue*/
+		div.header {
+			background-color: lightblue;
+			padding: 20px;
+			margin: 0px;
+		}
+	</style>
+	<head>
+		<script src="studentOptions.js"></script>
+		<div class="header">
+			<center>
+				<h1>Search for Announcements!</h1>
+			</center>
+		</div>
+	</head>
+	
+	<body>
+		<center>
+		<table>												<!-- Makes a 2x2 table -->									
+			<tr>											<!-- Header row -->
+				<th><center><h2>Grade</h2></center>
+				<th><center><h2>Gender</h2></center>
+				<th><center><h2>Club</h2></center>
+			<tr>											<!-- Makes a grade dropdown list -->	
+				<td width="200px">
+				<center>
+					<select id="htmlSGrade">
+						<option value="All">All</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</center>
+				</td>
+				<td width="200px">							<!-- Makes a gender option list -->
+				<center>
+					<input type="radio" id="htmlSGenderAll" name="gender" checked>All</input>
+					<input type="radio" id="htmlSGenderMale" name="gender" >Male</input>
+					<input type="radio" id="htmlSGenderFemale" name="gender" >Female</input>
+				</center>
+				</td>			
+				<td width="200px">							<!-- Makes club checkboxes -->
+				<center>
+					<input id= "htmlSClubAll" type="checkbox" checked>ALL</input><br>
+					<input id= "htmlSClubBasketball" type="checkbox">Basketball</input><br>
+					<input id= "htmlSClubTennis" type="checkbox">Tennis</input><br>
+					<input id= "htmlSClubSoccer" type="checkbox">Soccer</input>
+				</center>
+				</td>
+				</select>
+			</tr>
+		</table>
+		<br>												<!-- Makes a search button -->
+		<button onclick="getStudentData()">SEARCH!</button>
+		</center>
+	</body>
+</html>

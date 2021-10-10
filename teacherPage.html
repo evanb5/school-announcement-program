@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		/*Sets header background colour to blue*/
+		div.header {
+			background-color: lightblue;
+			padding: 20px;
+			margin: 0px;
+		}
+	</style>
+	<head>
+		<script src="teacherPage.js"></script>
+		<div class="header">
+			<center>
+				<h1>Post an Announcement!</h1>
+			</center>
+		</div>
+	</head>
+	
+	<body>
+		<center>
+		<table>												<!-- Makes a 2x2 table -->									
+			<tr>											<!-- Header row -->
+				<th><center><h2>Grade</h2></center>
+				<th><center><h2>Gender</h2></center>
+				<th><center><h2>Club</h2></center>
+			<tr>											<!-- Makes a grade dropdown list -->	
+				<td width="200px">
+				<center>
+					<select id="htmlTGrade">
+						<option value="All">ALL</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</center>
+				</td>
+				<td width="200px">							<!-- Makes a gender option list -->
+				<center>
+					<input type="radio" id="htmlTGenderAll" name="gender" checked>ALL</input>
+					<input type="radio" id="htmlTGenderMale" name="gender" >Male</input>
+					<input type="radio" id="htmlTGenderFemale" name="gender" >Female</input>
+				</center>
+				</td>			
+				<td width="200px">							<!-- Makes club checkboxes -->
+				<center>
+					<input id= "htmlTClubAll" type="checkbox" checked>ALL</input><br>
+					<input id= "htmlTClubBasketball" type="checkbox">Basketball</input><br>
+					<input id= "htmlTClubTennis" type="checkbox">Tennis</input><br>
+					<input id= "htmlTClubSoccer" type="checkbox">Soccer</input>
+				</center>
+				</td>
+			</select>
+			</tr>
+		</table>
+		<br>
+		<br>												<!-- Makes an announcement textbox -->
+		<textarea id= "htmlTAnnouncement" rows="20" cols="100" placeholder="Type announcement here..."></textarea>
+		<br>
+		<br>												<!-- Makes a post button -->
+		<button onclick="getTeacherData()">POST!</button>	
+		</center>
+	</body>
+</html>
